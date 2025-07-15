@@ -1,0 +1,90 @@
+.history-container {
+    max-width: 500px;
+    margin: 2.5rem auto 0 auto;
+    background: #fcfcfd;
+    border-radius: 10px;
+    padding: 2rem 1.4rem 1.2rem 1.4rem;
+    box-shadow: 0 2px 18px 0 rgba(63, 80, 110, 0.07);
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.history-container h3 {
+    text-align: center;
+    color: #28436d;
+    margin-bottom: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+.history-empty {
+    text-align: center;
+    color: #b1b8c7;
+    font-size: 1.04rem;
+    padding: 2rem 0 1.2rem 0;
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history-item {
+    background: #fff;
+    border-radius: 8px;
+    border-left: 6px solid #e5eaf7;
+    margin-bottom: 1.1rem;
+    box-shadow: 0 0.5px 3px 0 rgba(59, 130, 246, 0.04);
+    padding: 1.1rem 1.2rem 0.6rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.history-item.sent {
+    border-left: 6px solid #3b7bf8;
+    background: #f3f8fe;
+}
+
+.history-item.received {
+    border-left: 6px solid #27b06c;
+    background: #f5fdf8;
+}
+
+.history-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 500;
+    color: #22335a;
+    font-size: 0.97rem;
+}
+
+.history-icon {
+    font-size: 1.27rem;
+}
+
+.history-body {
+    font-size: 1.05rem;
+    color: #2e3c50;
+    word-break: break-word;
+    margin-left: 1.8rem;
+}
+
+.history-date {
+    font-size: 0.91rem;
+    color: #8c99b5;
+    align-self: flex-end;
+    margin-top: 0.2rem;
+}
+
+@media (max-width: 600px) {
+    .history-container {
+        padding: 1.1rem 0.3rem 1.1rem 0.3rem;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .history-item {
+        padding: 0.9rem 0.5rem 0.5rem 0.7rem;
+    }
+}

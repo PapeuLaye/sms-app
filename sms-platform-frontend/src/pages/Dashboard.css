@@ -1,0 +1,26 @@
+.dashboard-container {
+    min-height: 100vh;
+    background: linear-gradient(110deg, #e8f0fe 0%, #f4faff 100%);
+    padding: 0 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-title {
+    font-size: 2.1rem;
+    text-align: center;
+    color: #204075;
+    margin-top: 2.3rem;
+    margin-bottom: 2.2rem;
+    letter-spacing: 0.5px;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.dashboard-section {
+    width: 100%;
+    max-width: 540px;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+}

@@ -1,7 +1,8 @@
 const axios = require('axios');
 
 exports.getToken = async (req, res) => {
-  const { client_id, client_secret } = req.body;
+  const client_id = process.env.ORANGE_API_CLIENT_ID;
+  const client_secret = process.env.ORANGE_API_CLIENT_SECRET;
 
   if (!client_id || !client_secret) {
     return res.status(400).json({ error: "client_id and client_secret are required" });
